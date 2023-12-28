@@ -11,7 +11,7 @@ type Props = {
 
 export function FaturasScreen(props: Props) {
   const { apiData, onNewData, onClientNumberFilter, onReset } = useBillData(
-    props.data
+    props.data||[]
   );
 
   useEffect(() => {
