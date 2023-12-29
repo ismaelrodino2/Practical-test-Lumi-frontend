@@ -1,8 +1,14 @@
+"use client";
+
 import { Bill, Inputs } from "@/app/types/types";
 import { Button } from "@/components/button";
 import Input from "@/components/input";
 import { SubmitHandler } from "react-hook-form";
 import { Upload } from "./upload";
+import { TrashIcon } from "lucide-react";
+import { useTransition } from "react";
+import { toast } from "react-toastify";
+import { deleteAction } from "../(actions)/delete-bill-action";
 
 type Props = {
   data: Bill[];
@@ -11,6 +17,8 @@ type Props = {
 };
 
 export function DashboardFilters(props: Props) {
+  const [isPending, startTransition] = useTransition();
+
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     props.onClientNumberFilter(data.clientNumber);
   };
@@ -20,11 +28,23 @@ export function DashboardFilters(props: Props) {
     props.onReset();
   };
 
+  async function handleDelete() {
+    startTransition(async () => {
+      try {
+        await deleteAction();
+        toast.success("Faturas deletadas");
+      } catch (err) {
+        console.error(err);
+        toast.error("Erro ao deletar faturas");
+      }
+    });
+  }
+
   return (
     <div className="flex  justify-center ">
       <div className="flex flex-col text-center">
         <h1 className="text-black text-lg font-medium py-5">Gráficos de uso</h1>
-        <div className="flex gap-x-8 gap-y-2 flex-wrap">
+        <div className="flex gap-x-8 gap-y-2 flex-wrap justify-center">
           <Input onSubmit={onSubmit} />
           <Upload />
           <Button
@@ -35,6 +55,16 @@ export function DashboardFilters(props: Props) {
           >
             Resetar
           </Button>
+          <form action={handleDelete}>
+            <Button
+              variant="filled"
+              loading={isPending}
+              size="medium"
+              title="Deletar todos boletos"
+            >
+              <TrashIcon />
+            </Button>
+          </form>
         </div>
       </div>
     </div>

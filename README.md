@@ -11,7 +11,9 @@ No Dashboard, você terá acesso a dois gráficos essenciais:
 - **Gráfico de Custos:** Exibe visualmente os custos relacionados à energia.
 - **Gráfico de Energia Gasta:** Mostra o consumo de energia ao longo do tempo.
 
-Além disso, você pode filtrar os gráficos inserindo o número do cliente da fatura e pressionando o ícone "Enviar". Para adicionar uma nova fatura ao servidor, utilize o botão de adição e envie os dados com o botão correspondente. O botão de reset permite limpar o campo de entrada do número do cliente.
+Para personalizar a visualização dos gráficos, insira o número do cliente da fatura e clique no ícone 'Enviar'. Facilite a adição de novas faturas ao servidor usando o botão de adição, seguido pelo envio dos dados através do botão correspondente. Caso deseje limpar o campo de entrada do número do cliente, basta utilizar o botão de Resetar.
+
+Além disso, à direita, encontra-se um botão com o símbolo de uma lixeira. Este botão permite deletar todas as faturas do sistema, proporcionando uma maneira eficaz de limpar os dados e facilitar os testes online.
 
 ### Tela de Faturas
 
@@ -36,4 +38,10 @@ Para iniciar o projeto no frontend, siga as instruções abaixo:
 2. Inicie o projeto:
   ```#!/bin/sh
   pnpm dev
+  ```
+### Informações adicionais
+
+Caso queira executar os testes:
+   ```bash
+  pnpm test
   ```
