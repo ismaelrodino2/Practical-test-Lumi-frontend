@@ -30,10 +30,10 @@ Antes de iniciar o desenvolvimento, siga esses passos:
 Para iniciar o projeto no frontend, siga as instruções abaixo:
 
 1. Instale as dependências:
-   ```bash
+  ```#!/bin/sh
   pnpm i
   ```
 2. Inicie o projeto:
-   ```bash
+  ```#!/bin/sh
   pnpm dev
   ```
