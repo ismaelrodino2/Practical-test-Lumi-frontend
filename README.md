@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Projeto Lumia - Teste para Desenvolvedor Pleno Fullstack
+Bem-vindo ao teste para a posição de Desenvolvedor Pleno Fullstack na Lumia! Este projeto consiste em criar um sistema web com duas telas principais: o Dashboard e a Tela de Faturas. Abaixo, você encontrará uma descrição detalhada das funcionalidades e instruções para iniciar o projeto.
 
-## Getting Started
+Funcionalidades
+Dashboard
+No Dashboard, você terá acesso a dois gráficos essenciais:
 
-First, run the development server:
+Gráfico de Custos: Exibe visualmente os custos relacionados à energia.
+Gráfico de Energia Gasta: Mostra o consumo de energia ao longo do tempo.
+Além disso, você pode filtrar os gráficos inserindo o número do cliente da fatura e pressionando o ícone "Enviar". Para adicionar uma nova fatura ao servidor, utilize o botão de adição e envie os dados com o botão correspondente. O botão de reset permite limpar o campo de entrada do número do cliente.
 
-```bash
+Tela de Faturas
+Na Tela de Faturas, você pode realizar as seguintes ações:
+
+Consulta de Fatura: Insira o número do cliente, pressione "Enviar" e selecione o mês desejado para visualizar e baixar a fatura correspondente.
+Configuração Inicial
+Antes de iniciar o desenvolvimento, siga esses passos:
+
+Abra o arquivo .env e defina a variável NEXT_PUBLIC_API_BASE_URL com a URL da API que será utilizada. O endpoint da API pode ser encontrado no repositório [link para o repositório].
+Iniciando o Projeto
+Para iniciar o projeto no frontend, siga as instruções abaixo:
+
+Instale as dependências:
+
+bash
+Copy code
+npm install
+Inicie o aplicativo:
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Acesse o aplicativo no navegador através de http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Contribuindo
+Fique à vontade para contribuir com melhorias e correções neste projeto. Sua colaboração é fundamental para o sucesso contínuo da Lumia.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Agradecemos por participar do teste e desejamos boa sorte!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Equipe Lumia
