@@ -44,7 +44,7 @@ export function DashboardFilters(props: Props) {
     <div className="flex  justify-center ">
       <div className="flex flex-col text-center">
         <h1 className="text-black text-lg font-medium py-5">Gráficos de uso</h1>
-        <div className="flex gap-x-8 gap-y-2 flex-wrap justify-center">
+        <div className="flex gap-x-8 gap-y-4 flex-wrap justify-center">
           <Input onSubmit={onSubmit} />
           <Upload />
           <Button
