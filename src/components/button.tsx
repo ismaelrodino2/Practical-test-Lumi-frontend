@@ -21,7 +21,7 @@ const buttonSizeClasses: Record<ButtonSize, string> = {
 };
 
 export const buttonVariantClasses: Record<ButtonVariant, string> = {
-  filled: "bg-gray-100 border border-[transparent] text-gray-900 font-medium",
+  filled: "bg-gray-100 border border-[transparent] text-gray-600 font-medium",
   filledDark: "bg-gray-900 border border-[transparent] text-white",
   outlined: "text-gray-600 border border-gray-600",
 };

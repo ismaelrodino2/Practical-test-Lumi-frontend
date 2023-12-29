@@ -62,7 +62,7 @@ export function DashboardFilters(props: Props) {
               size="medium"
               title="Deletar todos boletos"
             >
-              <TrashIcon />
+              <TrashIcon className="text-gray-600" />
             </Button>
           </form>
         </div>
