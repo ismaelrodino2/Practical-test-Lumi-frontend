@@ -16,7 +16,7 @@ type Props = {
 };
 
 export function CostChart(props: Props) {
-  const labelsDates = props.data.map((item) => item.date);
+  const labelsDates = props.data?.map((item) => item.date);
   const totalValueWithoutGD = props.data.map(
     (item) => item.eletricityCost + item.sceeeeCost + item.publicContribution
   );
@@ -63,7 +63,7 @@ export function CostChart(props: Props) {
     },
   };
 
-  const labels = labelsDates;
+  const labels = labelsDates||[];
 
   const chartData = {
     labels,

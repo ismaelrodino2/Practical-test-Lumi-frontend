@@ -17,7 +17,7 @@ type Props = {
 };
 
 export function EnergyChart(props: Props) {
-  const labelsDates = props.data.map((item) => item.date);
+  const labelsDates = props.data?.map((item) => item.date);
   const electricityConsumption = props.data.map(
     (item) => item.eletricityConsumption + item.sceeeeConsumption
   );
@@ -65,7 +65,7 @@ export function EnergyChart(props: Props) {
     },
   };
 
-  const labels = labelsDates;
+  const labels = labelsDates||[];
 
   const chartData = {
     labels,
