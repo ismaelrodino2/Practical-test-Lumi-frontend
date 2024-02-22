@@ -1,9 +1,9 @@
 "use client";
 import { useEffect } from "react";
 import { Bill } from "@/types/types";
-import { CostChart, EnergyChart } from "./(components)/(charts)";
-import { DashboardFilters } from "./(components)/dashboard-filters";
-import { useBillData } from "./(hooks)/use-bill-data";
+import { CostChart, EnergyChart } from "@/components/dashboard/charts";
+import { DashboardFilters } from "@/components/dashboard/dashboard-filters";
+import { useBillData } from "./use-bill-data";
 
 type Props = {
   data: Bill[];
