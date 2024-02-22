@@ -1,4 +1,4 @@
-import { Bill } from "@/app/types/types";
+import { Bill } from "@/types/types";
 import React from "react";
 import {
   Chart as ChartJS,

@@ -1,9 +1,9 @@
 "use client";
 import { useEffect } from "react";
-import { Bill } from "../types/types";
+import { Bill } from "@/types/types";
 import { CostChart, EnergyChart } from "./(components)/(charts)";
 import { DashboardFilters } from "./(components)/dashboard-filters";
-import useBillData from "./(hooks)/api-data";
+import { useBillData } from "./(hooks)/use-bill-data";
 
 type Props = {
   data: Bill[];
@@ -11,7 +11,7 @@ type Props = {
 
 export function FaturasScreen(props: Props) {
   const { apiData, onNewData, onClientNumberFilter, onReset } = useBillData(
-    props.data||[]
+    props.data || []
   );
 
   useEffect(() => {

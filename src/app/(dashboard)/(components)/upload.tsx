@@ -2,7 +2,7 @@
 import { PlusIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { FormDataType } from "@/app/types/types";
-import { Button } from "@/components/button";
+import { Button } from "@/components/ui/button";
 import React, { useRef, useTransition } from "react";
 import { toast } from "react-toastify";
 import { uploadAction } from "../(actions)/create-bill-action";

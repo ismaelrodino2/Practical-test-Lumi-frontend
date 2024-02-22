@@ -1,4 +1,4 @@
-import { Inputs } from "@/app/types/types";
+import { Inputs } from  "@/types/types";
 import { SendHorizontalIcon } from "lucide-react";
 import { SubmitHandler, useForm } from "react-hook-form";
 

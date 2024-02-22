@@ -1,11 +1,11 @@
 "use client";
-import { Button } from "@/components/button";
+import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { BillsFilters } from "./(components)/bills-filters";
-import useClientBills from "./(hooks)/bills";
+import { useBills } from "./(hooks)/use-bills";
 
 export default function Faturas() {
-  const { bills, downloadPdf, onSubmit } = useClientBills();
+  const { bills, downloadPdf, onSubmit } = useBills();
   const [selectedMonth, setSelectedMonth] = useState<string>("");
 
   return (

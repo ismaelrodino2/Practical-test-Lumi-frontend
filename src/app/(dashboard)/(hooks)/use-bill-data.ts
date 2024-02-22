@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Bill } from "../../types/types";
+import { Bill } from "@/types/types";
 
-function useBillData(initialValue: Bill[]) {
+export function useBillData(initialValue: Bill[]) {
   const [apiData, setApiData] = useState(initialValue);
 
   function onNewData(data: Bill[]) {
@@ -19,4 +19,3 @@ function useBillData(initialValue: Bill[]) {
   return { apiData, onNewData, onClientNumberFilter, onReset };
 }
 
-export default useBillData;

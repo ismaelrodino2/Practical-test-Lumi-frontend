@@ -1,8 +1,8 @@
 "use client";
 
-import { Bill, Inputs } from "@/app/types/types";
-import { Button } from "@/components/button";
-import Input from "@/components/input";
+import { Bill, Inputs } from "@/types/types";
+import { Button } from "@/components/ui/button";
+import Input from "@/components/ui/input";
 import { SubmitHandler } from "react-hook-form";
 import { Upload } from "./upload";
 import { TrashIcon } from "lucide-react";

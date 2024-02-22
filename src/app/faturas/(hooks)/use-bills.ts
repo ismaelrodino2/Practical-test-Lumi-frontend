@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 import { toast } from "react-toastify";
-import { Bill } from "../../types/types";
+import { Bill } from "@/types/types";
 
-function useClientBills() {
+export function useBills() {
   const [bills, setBills] = useState<Bill[]>([]);
 
   async function downloadPdf(file: Bill) {
@@ -46,5 +46,3 @@ function useClientBills() {
 
   return { bills, downloadPdf, onSubmit };
 }
-
-export default useClientBills;

@@ -1,10 +1,13 @@
-import { FaturasScreen } from "./(dashboard)/page.client";
+import { FaturasScreen } from "./page.client";
 
 async function getData() {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/bill/all`, {
-      next: { revalidate: 60 * 5, tags: ["bills"] },
-    });
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/bill/all`,
+      {
+        next: { revalidate: 60 * 5, tags: ["bills"] },
+      }
+    );
     const json = await res.json();
     return json;
   } catch (err) {

@@ -1,5 +1,4 @@
-import { Bill } from "@/app/types/types";
-
+import { Bill } from "@/types/types";
 type Props = {
   bills: Bill[];
   setSelectedMonth: (value: string) => void;

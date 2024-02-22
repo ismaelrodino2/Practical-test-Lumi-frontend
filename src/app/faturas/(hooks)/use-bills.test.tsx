@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, test, vi } from "vitest";
-import useClientBills from "./bills";
 import { renderHook } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
+import { useBills } from "./use-bills";
 
 // Mocking the fetch
 vi.mock("node-fetch");
@@ -56,7 +56,7 @@ describe("useClientBills", () => {
   });
 
   test("should set bills and show success toast on successful submit", async () => {
-    const { result } = renderHook(() => useClientBills());
+    const { result } = renderHook(() => useBills());
 
     await act(async () => {
       await result.current.onSubmit("12345");
@@ -66,7 +66,7 @@ describe("useClientBills", () => {
   });
 
   test("should set bills and show success toast for specific clientNumber", async () => {
-    const { result } = renderHook(() => useClientBills());
+    const { result } = renderHook(() => useBills());
 
     await act(async () => {
       await result.current.onSubmit("7005400387");
