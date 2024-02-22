@@ -1,7 +1,7 @@
 "use client";
 import { PlusIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
-import { FormDataType } from "@/app/types/types";
+import { FormDataType } from "@/types/types";
 import { Button } from "@/components/ui/button";
 import React, { useRef, useTransition } from "react";
 import { toast } from "react-toastify";

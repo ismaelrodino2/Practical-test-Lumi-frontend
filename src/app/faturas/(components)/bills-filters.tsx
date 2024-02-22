@@ -1,7 +1,7 @@
 "use client";
 
-import { Bill, Inputs } from "@/app/types/types";
-import Input from "@/components/input";
+import { Bill, Inputs } from "@/types/types";
+import Input from "@/components/ui/input";
 import { SubmitHandler } from "react-hook-form";
 import { BillsSelect } from "./bills-select";
 
