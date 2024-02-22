@@ -8,7 +8,7 @@ import { Upload } from "./upload";
 import { TrashIcon } from "lucide-react";
 import { useTransition } from "react";
 import { toast } from "react-toastify";
-import { deleteAction } from "../(actions)/delete-bill-action";
+import { deleteAction } from "@/components/dashboard/actions/delete-bill-action";
 
 type Props = {
   data: Bill[];

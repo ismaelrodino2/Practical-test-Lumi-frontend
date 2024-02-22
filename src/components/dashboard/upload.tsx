@@ -5,7 +5,7 @@ import { FormDataType } from "@/types/types";
 import { Button } from "@/components/ui/button";
 import React, { useRef, useTransition } from "react";
 import { toast } from "react-toastify";
-import { uploadAction } from "../(actions)/create-bill-action";
+import { uploadAction } from "@/components/dashboard/actions/create-bill-action";
 
 export function Upload() {
   const [isPending, startTransition] = useTransition();
