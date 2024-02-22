@@ -45,3 +45,4 @@ Caso queira executar os testes:
    ```bash
   pnpm test
   ```
+Caso queira adicionar arquivos, adicione os arquivos de teste em /faturas
